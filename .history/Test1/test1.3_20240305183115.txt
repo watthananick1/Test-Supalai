@@ -1,4 +1,0 @@
-ตั้งชื่อ interface และ class กว้างเกินไป
-ออกแบบ interface ไม่ดี
-Implement interface ไม่ครบ
-format โค้ดไม่สวย
