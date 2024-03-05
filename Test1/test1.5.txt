@@ -1,0 +1,6 @@
+1.5 รีวิวโค้ดด้านล่าง และบอกว่าผลลัพธ์สุดท้ายคืออะไร และเพราะอะไร
+
+    โปรแกรมนี้ใช้ Task.Run เรียกเมธอด Test 10 ตัวพร้อมกันแบบ async
+    แต่ละตัววนลูป 1,000,000 รอบ
+    โปรแกรมแสดงข้อความ "Task number:" + index + " Complete" เมื่อ Task แต่ละตัวเสร็จ
+    ผลลัพธ์คือ "Task number: 0 Complete Task number: 1 Complete ไปถึง Task number: 9 Complete"

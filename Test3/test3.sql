@@ -1,0 +1,35 @@
+CREATE TABLE Customers (
+  CustomerID INT NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(255) NOT NULL,
+  Address VARCHAR(255) NOT NULL,
+  Phone VARCHAR(20) NOT NULL,
+  Email VARCHAR(255) NOT NULL,
+  PRIMARY KEY (CustomerID)
+);
+
+CREATE TABLE Products (
+  ProductID INT NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(255) NOT NULL,
+  Price DECIMAL(10,2) NOT NULL,
+  Stock INT NOT NULL,
+  PRIMARY KEY (ProductID)
+);
+
+CREATE TABLE Orders (
+  OrderID INT NOT NULL AUTO_INCREMENT,
+  CustomerID INT NOT NULL,
+  OrderDate DATE NOT NULL,
+  OrderStatus VARCHAR(20) NOT NULL,
+  PRIMARY KEY (OrderID),
+  FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+CREATE TABLE OrderDetails (
+  OrderID INT NOT NULL,
+  ProductID INT NOT NULL,
+  Quantity INT NOT NULL,
+  Price DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (OrderID, ProductID),
+  FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+  FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);

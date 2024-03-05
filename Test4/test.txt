@@ -1,0 +1,28 @@
+4 จาก URL ข้างต้นหากระบุโครงสร้าง (Structure) ของ URL จะแยกเป็นส่วนได้อย่างไรบ้าง (เช่น protocal, subdomain,
+..etc)
+
+โครงสร้างของ URL: https://www.supalai.com/project/condo/ศุภาลัย-เวอเรนด้า-
+รามคําแหง?utm_source=google&utm_medium=search&utm_campaign=veranda-
+ramkhamhaeng&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxtcbl30lXqSOSv_LIL9UGQSZVHDgbPzQ-Q6vWdDJj6UofaVrMXuU_roaAoSwEALw_wcB
+
+zQ-Q6vWdDJj6UofaVrMXuU_roaAoSwEALw_wcB 
+
+แยกเป็นส่วนได้ดังนี้
+
+Protocol: https (Hypertext Transfer Protocol Secure)
+
+Subdomain: www (World Wide Web)
+
+Second-level domain: supalai
+
+Top-level domain: .com (Commercial)
+
+Path: /project/condo/ศุภาลัย-เวอเรนด้า-รามคําแหง
+
+Query string:
+
+utm_source: google
+utm_medium: search
+utm_campaign: veranda-ramkhamhaeng
+gad_source: 1
+gclid: Cj0KCQiAoKeuBhCoARIsAB4Wxtcbl30lXqSOSv_LIL9UGQSZVHDgbPzQ-Q6vWdDJj6UofaVrMXuU_roaAoSwEALw_wcB
